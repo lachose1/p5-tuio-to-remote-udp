@@ -9,8 +9,8 @@ TuioProcessing tuioClient;
 //List<TuioCursor> pointsList = new ArrayList<TuioCursor>();
 Map<Long, TuioCursor> pointsList = new HashMap<Long, TuioCursor>();
 
-String remoteIP = "127.0.0.1";
-int remotePort = 9002;
+String remoteIP = "10.0.0.103";
+int remotePort = 3335;
 
 void setup()
 {
