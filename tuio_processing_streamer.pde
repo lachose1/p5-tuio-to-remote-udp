@@ -9,15 +9,16 @@ TuioProcessing tuioClient;
 //List<TuioCursor> pointsList = new ArrayList<TuioCursor>();
 Map<Long, TuioCursor> pointsList = new HashMap<Long, TuioCursor>();
 
-String remoteIP = "10.0.0.103";
+String remoteIP = "127.0.0.1";
 int remotePort = 3335;
+int tuioPort = 3334;
 
 void setup()
 {
   size(1,1);
   //noLoop();
   udp = new UDP( this, 6000 );
-  tuioClient = new TuioProcessing(this);
+  tuioClient = new TuioProcessing(this, tuioPort);
   //udpTUIO = new UDP( this, 3333 );
   //udpTUIO.log( true );
   //udpTUIO.listen( true );
